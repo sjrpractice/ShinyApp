@@ -1,0 +1,47 @@
+---
+title: "Shiny app: Impact of lawyer interactions on judge retention ratings"
+author: "Steve"
+date: "February 15, 2019"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Project 9.3 
+
+- Shiny app: Impact of lawyer interactions on judge retention ratings  
+- February 15, 2019
+- Author: Steve
+
+## Judge retention rating app purpose
+
+This project is a shiny app allowing users to examine the effects of several measures on the overall judge retention worthiness rating given by lawyers for judges. Interested users may be judges or judicial administrators interested in learning which measures are effective in maintaining standing and respect within the legal community, and lawyers interested in how their colleagues view the judicial system.
+
+## About the data
+
+The source of the data is the "Lawyers' Ratings of State Judges in the US Superior Court" dataset within R's datasets package.
+
+The data frame contains observations for 43 judges in the U.S. Superior Court and is sourced from the New Haven Register, 14 January 1977, according to the R Documentation. The fields include 11 measures of judge-lawyer interaction, and a twelfth field which is the lawyer's overall rating of whether the judge shoudld be retained.
+
+## How to use the Shiny app
+
+To use the shiny app, first navigate to https://sjrpractice.shinyapps.io/judgesapp/. 
+
+Users utilize the drop-down menu to select the variable whose effect on judicial retention ratings they would like to measure. The X axis shows the retention rating from 5 to 9 (all judges were graded on a 1-10 scale but none received lower than a 5 or higher than 9) and the Y axis shows the range of ratings for the variable being examined.
+
+## Image of the Shiny app
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('judgesapp.jpg')
+```
+
+
+## Conclusion
+
+This Shiny app has applications for users throughout the judicial community, and will aid laweyers, judges and other legal professionals in their important work of furthering justice in their communities.
+
+To use the app, navigate to https://sjrpractice.shinyapps.io/judgesapp/. 
